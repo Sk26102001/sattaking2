@@ -245,7 +245,7 @@ export default function NavbarClone() {
       <div className="flex items-center justify-between">
 
         {/* Logo */}
-        <Link to="/">
+        <Link to="/sattaking2">
           <img
             src="logo1.png"
             width="80"
@@ -265,32 +265,32 @@ export default function NavbarClone() {
         {/* Desktop Navbar */}
         <ul className="hidden md:flex items-center gap-6 text-sm font-semibold uppercase">
           <li>
-            <Link className="text-orange-400 hover:text-orange-500" to="/">
+            <Link className="text-orange-400 hover:text-orange-500" to="/sattaking2">
               Home
             </Link>
           </li>
           <li>
-            <Link className="text-orange-400 hover:text-orange-500" to="/play-online">
+            <Link className="text-orange-400 hover:text-orange-500" to="/sattaking2/play-online">
               Play Online
             </Link>
           </li>
           <li>
-            <Link className="text-orange-400 hover:text-orange-500" to="/record">
+            <Link className="text-orange-400 hover:text-orange-500" to="/sattaking2/record">
               Record
             </Link>
           </li>
           <li>
-            <Link className="text-orange-400 hover:text-orange-500" to="/posting">
+            <Link className="text-orange-400 hover:text-orange-500" to="/sattaking2/posting">
               Posting
             </Link>
           </li>
           <li>
-            <Link className="text-orange-400 hover:text-orange-500" to="/admin-login">
+            <Link className="text-orange-400 hover:text-orange-500" to="/sattaking2/admin-login">
               Admin Login
             </Link>
           </li>
           <li>
-            <Link className="text-orange-400 hover:text-orange-500" to="/login">
+            <Link className="text-orange-400 hover:text-orange-500" to="/sattaking2/login">
               User
             </Link>
           </li>
@@ -306,13 +306,13 @@ export default function NavbarClone() {
         <div className="hidden md:flex items-center gap-3">
           <Link
             className="border border-orange-400 text-orange-400 px-4 py-1 rounded-md hover:bg-orange-500 hover:text-white transition"
-            to="/login"
+            to="/sattaking2/login"
           >
             Login
           </Link>
           <Link
             className="border border-orange-400 text-orange-400 px-4 py-1 rounded-md hover:bg-orange-500 hover:text-white transition"
-            to="/register"
+            to="/sattaking2/register"
           >
             Register
           </Link>
@@ -324,32 +324,32 @@ export default function NavbarClone() {
         <div className="md:hidden mt-4">
           <ul className="flex flex-col gap-4 text-sm font-semibold uppercase">
             <li>
-              <Link className="text-orange-400" to="/" onClick={() => setOpen(false)}>
+              <Link className="text-orange-400" to="/sattaking2" onClick={() => setOpen(false)}>
                 Home
               </Link>
             </li>
             <li>
-              <Link className="text-orange-400" to="/play-online" onClick={() => setOpen(false)}>
+              <Link className="text-orange-400" to="/sattaking2/play-online" onClick={() => setOpen(false)}>
                 Play Online
               </Link>
             </li>
             <li>
-              <Link className="text-orange-400" to="/record" onClick={() => setOpen(false)}>
+              <Link className="text-orange-400" to="/sattaking2/record" onClick={() => setOpen(false)}>
                 Record
               </Link>
             </li>
             <li>
-              <Link className="text-orange-400" to="/posting" onClick={() => setOpen(false)}>
+              <Link className="text-orange-400" to="/sattaking2/posting" onClick={() => setOpen(false)}>
                 Posting
               </Link>
             </li>
             <li>
-              <Link className="text-orange-400" to="/admin-login" onClick={() => setOpen(false)}>
+              <Link className="text-orange-400" to="/sattaking2/admin-login" onClick={() => setOpen(false)}>
                 Admin Login
               </Link>
             </li>
             <li>
-              <Link className="text-orange-400" to="/login" onClick={() => setOpen(false)}>
+              <Link className="text-orange-400" to="/sattaking2/login" onClick={() => setOpen(false)}>
                 User
               </Link>
             </li>
@@ -364,14 +364,14 @@ export default function NavbarClone() {
             <div className="flex flex-col gap-3 mt-3">
               <Link
                 className="border border-orange-400 text-orange-400 px-4 py-2 rounded-md"
-                to="/login"
+                to="/sattaking2/login"
                 onClick={() => setOpen(false)}
               >
                 Login
               </Link>
               <Link
                 className="border border-orange-400 text-orange-400 px-4 py-2 rounded-md"
-                to="/register"
+                to="/sattaking2/register"
                 onClick={() => setOpen(false)}
               >
                 Register

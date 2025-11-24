@@ -257,7 +257,7 @@ import DisclaimerBar from "./Components/DisclaimerBar.jsx";
 export default function App() {
   const location = useLocation();
 
-  const hideNavbarRoutes = ["/admin-login", "/register", "/terms-services"];
+  const hideNavbarRoutes = ["/sattaking2/admin-login", "/sattaking2/register", "/sattaking2/terms-services"];
 
   const hideNavbar = hideNavbarRoutes.includes(
     location.pathname.toLowerCase()
@@ -270,13 +270,13 @@ export default function App() {
 
       <Routes>
         <Route path="/sattaking2" element={<LandingPage />} />
-        <Route path="/admin-login" element={<AdminLogin />} />
-        <Route path="/record" element={<Record />} />
-        <Route path="/play-online" element={<PlayOnline />} />
-        <Route path="/posting" element={<Posting />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<User />} />
-        <Route path="/terms-services" element={<TermAndServices />} />
+        <Route path="/sattaking2/admin-login" element={<AdminLogin />} />
+        <Route path="/sattaking2/record" element={<Record />} />
+        <Route path="/sattaking2/play-online" element={<PlayOnline />} />
+        <Route path="/sattaking2/posting" element={<Posting />} />
+        <Route path="/sattaking2/register" element={<Register />} />
+        <Route path="/sattaking2/login" element={<User />} />
+        <Route path="/sattaking2/terms-services" element={<TermAndServices />} />
       </Routes>
     </>
   );
