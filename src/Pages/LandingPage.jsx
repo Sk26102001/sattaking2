@@ -32,12 +32,10 @@
 // }
 // LandingPage.jsx
 
-
 import React from 'react';
 
-
 import Home from "../Components/Home.jsx";
-import SattaKingChart from "../Components/SattaKingChart.jsx";
+// import SattaKingChart from "../Components/SattaKingChart.jsx";
 import OnlineKhaiwal from "../Components/OnlineKhaiwal.jsx";
 import DataPage from "../Components/DataPage.jsx";
 import Sample from "../Components/Sample.jsx";
@@ -45,32 +43,26 @@ import Add2 from "../Components/Add2.jsx";
 import Footer from "../Components/Footer.jsx";
 import MarqueeText from "../Components/MarqueeText.jsx";
 import Hero from "../Components/Hero.jsx";
-import DisclaimerBar from '../Components/DisclaimerBar.jsx';
 import Chart3 from '../Components/Chart3.jsx';
 import WhatsappOnlineChat from '../Components/WhatsappOnlineChat.jsx';
-
 
 export default function LandingPage() {
     return (
         <>
            <MarqueeText />
-          <Hero />
-          <DisclaimerBar />
+           <Hero />
         
-            <Home/>
-          <Sample />
-            <OnlineKhaiwal />
-            <DataPage/>
+           <Home />
+           <Sample />
+           <OnlineKhaiwal />
+           <DataPage />
           
-            <Add2 />
+           <Add2 />
 
-            {/* 👉 Final Chart here */}
-           <Chart3/>
+           <Chart3 />
 
-            <Footer/> 
-            <WhatsappOnlineChat/>
+           <Footer />
+           <WhatsappOnlineChat />
         </>
     );
 }
-
-

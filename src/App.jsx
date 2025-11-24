@@ -240,6 +240,7 @@
 //     </div>
 //   )
 // }
+
 import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./Components/NavbarClone";
 
@@ -248,41 +249,35 @@ import Record from "./Pages/Record";
 import PlayOnline from "./Pages/PlayOnline";
 import Posting from "./Pages/Posting";
 import Register from "./Pages/Register";
-import LandingPage from "./Pages/LandingPage.jsx"; 
+import LandingPage from "./Pages/LandingPage.jsx";
 import User from "./Pages/User.jsx";
-import TermAndServices from "./Components/TermAndServices.jsx"
+import TermAndServices from "./Components/TermAndServices.jsx";
 import DisclaimerBar from "./Components/DisclaimerBar.jsx";
-
 
 export default function App() {
   const location = useLocation();
 
-  const hideNavbarRoutes = ["/admin-login",  "/register","/terms-services" ];
+  const hideNavbarRoutes = ["/admin-login", "/register", "/terms-services"];
 
- 
   const hideNavbar = hideNavbarRoutes.includes(
     location.pathname.toLowerCase()
   );
 
   return (
     <>
-      {/* Navbar hide/show */}
       {!hideNavbar && <Navbar />}
+      {!hideNavbar && <DisclaimerBar />}
 
       <Routes>
-        {/* 🚀 HOME ROUTE - यह केवल '/' पाथ पर LandingPage के सभी कॉम्पोनेंट्स दिखाएगा */}
-        <Route path="/" element={<LandingPage />} /> 
-
+        <Route path="/sattaking2" element={<LandingPage />} />
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/record" element={<Record />} />
         <Route path="/play-online" element={<PlayOnline />} />
         <Route path="/posting" element={<Posting />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<User />} />
-        <Route path="/" element={<DisclaimerBar />} />
         <Route path="/terms-services" element={<TermAndServices />} />
-      
       </Routes>
-    </> 
+    </>
   );
 }
